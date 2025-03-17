@@ -8,8 +8,6 @@ import { WishlistPage } from './pages/WishlistPage'
 import { HomePage } from './pages/HomePage'
 import { CareGuidesPage } from './pages/CareGuidesPage'
 import { CareGuideDetailPage } from './pages/CareGuideDetailPage'
-import { AboutPage } from './pages/AboutPage'
-import { ContactPage } from './pages/ContactPage'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
 
@@ -30,8 +28,7 @@ function App() {
               <Route path="/wishlist" element={<WishlistPage />} />
               <Route path="/care-guides" element={<CareGuidesPage />} />
               <Route path="/care-guides/:slug" element={<CareGuideDetailPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/about" element={<div className="container mx-auto px-4 py-16"><h1 className="text-3xl font-bold">About Mac's Orchids</h1><p className="mt-4">Coming soon...</p></div>} />
               <Route path="/account" element={<div className="container mx-auto px-4 py-16"><h1 className="text-3xl font-bold">My Account</h1><p className="mt-4">Coming soon...</p></div>} />
             </Routes>
           </main>

@@ -88,11 +88,6 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-gray-600 hover:text-green-600">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
                 <Link to="/shipping" className="text-sm text-gray-600 hover:text-green-600">
                   Shipping & Returns
                 </Link>
@@ -100,6 +95,11 @@ export const Footer: React.FC = () => {
               <li>
                 <Link to="/faq" className="text-sm text-gray-600 hover:text-green-600">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-gray-600 hover:text-green-600">
+                  Contact Us
                 </Link>
               </li>
               <li>

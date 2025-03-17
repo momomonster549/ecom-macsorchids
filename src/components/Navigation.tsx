@@ -4,81 +4,6 @@ import { ShoppingCart, Heart, User, Menu, X, Search, Home, Leaf, Gift, Package, 
 import { useCartStore } from '../store/cartStore'
 import { useWishlistStore } from '../store/wishlistStore'
 
-// Enhanced Orchid SVG Logo Component
-const OrchidLogo = () => (
-  <svg 
-    width="32" 
-    height="32" 
-    viewBox="0 0 32 32" 
-    fill="none" 
-    xmlns="http://www.w3.org/2000/svg" 
-    className="text-green-700"
-  >
-    {/* Stem */}
-    <path 
-      d="M16 16V28" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    
-    {/* Leaves */}
-    <path 
-      d="M16 22C16 22 12 20 10 22C8 24 9 28 9 28C9 28 13 27 14 25C15 23 16 22 16 22Z" 
-      fill="#E0F2E9" 
-      stroke="currentColor" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    <path 
-      d="M16 22C16 22 20 20 22 22C24 24 23 28 23 28C23 28 19 27 18 25C17 23 16 22 16 22Z" 
-      fill="#E0F2E9" 
-      stroke="currentColor" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    
-    {/* Flower petals */}
-    <path 
-      d="M16 4C13 4 11 7 11 9C11 11 13 13 16 13C19 13 21 11 21 9C21 7 19 4 16 4Z" 
-      fill="#F8E3FF" 
-      stroke="currentColor" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    <path 
-      d="M10 8C7 8 5 10 5 13C5 16 7 18 10 18C13 18 14 15 14 13C14 11 13 8 10 8Z" 
-      fill="#F8E3FF" 
-      stroke="currentColor" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    <path 
-      d="M22 8C25 8 27 10 27 13C27 16 25 18 22 18C19 18 18 15 18 13C18 11 19 8 22 8Z" 
-      fill="#F8E3FF" 
-      stroke="currentColor" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    
-    {/* Flower center */}
-    <circle 
-      cx="16" 
-      cy="13" 
-      r="3" 
-      fill="#FFEC99" 
-      stroke="currentColor" 
-      strokeWidth="1.5"
-    />
-  </svg>
-);
-
 export const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -123,9 +48,11 @@ export const Navigation: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="text-xl font-bold text-green-700 flex items-center">
-              <div className="h-12 w-12 mr-2 flex items-center justify-center bg-white rounded-full shadow-sm">
-                <OrchidLogo />
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1566907225472-514215c9e5cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" 
+                alt="Mac's Orchids Logo" 
+                className="h-8 w-8 mr-2 rounded-full"
+              />
               Mac's Orchids
             </Link>
             
